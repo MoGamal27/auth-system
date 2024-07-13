@@ -1,0 +1,36 @@
+/AUTH-SYSTEM
+├── /controllers
+│   ├── authController.js
+│   ├── userController.js
+│   ├── 2faController.js
+│   ├── notificationController.js
+│   └── trustedDeviceController.js
+├── /models
+│   ├── user.js
+│   └── trustedDevice.js
+├── /services
+│   ├── authService.js
+│   ├── userService.js
+│   ├── 2faService.js
+│   ├── notificationService.js
+│   └── trustedDeviceService.js
+├── /routes
+│   ├── authRoutes.js
+│   ├── userRoutes.js
+│   ├── 2faRoutes.js
+│   ├── notificationRoutes.js
+│   └── trustedDeviceRoutes.js
+├── /middleware
+│   ├── authMiddleware.js
+│   └── errorMiddleware.js
+├── /utils
+│   ├── generateJWT.js
+│   └── sendEmail.js
+├── /config
+│   └── db.js
+├── /gateway
+│   └── apiGateway.js
+├── .env
+├── server.js
+├── package.json
+└── README.md
