@@ -4,7 +4,7 @@ dotenv.config();
 
 exports.sendLoginNotification = async function sendLoginNotification(user, ipInfo) {
     const mailOptions = {
-      from: 'your-app@example.com',
+      from: 'process.env.EMAIL_USER',
       to: user.email,
       subject: 'New Login Detected',
       text: `Hello ${user.username},
@@ -16,7 +16,7 @@ exports.sendLoginNotification = async function sendLoginNotification(user, ipInf
   City: ${ipInfo.city}
   
   If this was you, you can mark this device as trusted by visiting:
-  https://yourapp.com/trust-device?username=${user.username}&ip=${ipInfo.ip}
+  https://localhost/trust-device?username=${user.username}&ip=${ipInfo.ip}
   
   If this wasn't you, please secure your account immediately.
   
